@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prefil</title>
+</head>
+<style>
+	table{
+    	border:1px solid purple;
+    }
+</style>
+<body>
+	
+
+<div id = “new-client-form”>
+<p> New Client Form </p>
+<form action="/action_page.php">
+      <table >
+        <tr>
+          <td>
+            <label for="title">Title: </label>
+          </td>
+          <td>
+            <select name="title" id="title">
+			  <option value="select">Select</option>
+              <option value="mr">Mr</option>
+              <option value="miss">Miss</option>
+              <option value="ms">Ms</option>
+              <option value="mrs">Mrs</option>
+              <option value="dr">Dr</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="fname">First Name: </label></td>
+          <td><input type="text" id="fname" name="fname" value="" /></td>
+        </tr>
+        <tr>
+          <td><label for="surname">Surname: </label></td>
+          <td><input type="text" id="surname" name="surname" value="" /></td>
+        </tr>
+        <tr>
+          <td><label for="phone">Phone: </label></td>
+          <td><input type="text" id="phone" name="phone" value="" /></td>
+        </tr>
+        <tr>
+          <td><label for="otherphone">Other phone: </label></td><table</table>
+          <td><input type="text" id="otherphone" name="otherphone" value="" /><br /></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email: </label></td>
+          <td><input type="text" id="email" name="email" value="" /></td>
+        </tr>
+        <tr>
+          <td><label for="address">Address: </label></td>
+          <td><input type="text" id="address" name="address" value="" /></td>
+        </tr>
+        <tr>
+          <td><label for="suburb">Suburb: </label></td>
+          <td><input type="text" id="suburb" name="suburb" value="" /></td> 
+        </tr>
+        <tr>
+          <td><label for="post">Post code/Zip: </label></td>
+          <td><input type="text" id="post" name="post" value="" /></td>
+        </tr>
+      </table>
+      		<input type="submit" name="clientSubmit" value="Client submit">
+    </form>
+	</div>
+<div id="pet-details">
+<p>Pet Details</p>
+<form action="/action_page.php">
+	<table>
+		<tr>
+			<td><label for="petName"> Pet Name:</label></td>
+			<td><input type="text" id="petName" name="petName" value=""></td>
+		</tr>
+		<tr>
+			<td>
+				<label for="species">Species: </label>
+			</td>
+			<td>
+			<select name="species" id="species">
+				<option value="select">Select</option>
+				<option value="canine">Canine</option>
+				<option value="feline">Feline</option>
+				<option value="reptile">Reptile</option>
+				<option value="avian">Avian</option>
+				<option value="amphibian">Amphibian</option>
+				<option value="rabbit">Rabbit</option>
+				<option value="rodent">Rodent</option>
+				<option value="ferret">Ferret</option>
+				<option value="other">Other</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+			<td><label for="breed"> Breed: </label></td>
+			<td><input type="text" id="breed" name="breed" value=""></td>
+		</tr>
+		<tr>
+			<td>
+				<label for="sex">Sex: </label>
+			</td>
+			<td>
+			<select name="sex" id="sex">
+				<option value="select">Select</option>
+				<option value="maleEntire">Male Entire</option>
+				<option value="maleNeuered">Male Neutered</option>
+				<option value="femaleEntire">Female Entire</option>
+				<option value="femaleNeuered">Female Neutered</option>
+				<option value="unknown">Unknown</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+			<td><label for="colour"> Colour:  </label></td>
+			<td><input type="text" id="colour" name="colour" value=""></td>
+		</tr>
+		<tr>
+			<td><label for="birthday">D.O.B:</label></td>
+			<td><input type="date" id="birthday" name="birthday"></td>
+		</tr>
+		<tr>
+			<td><label for="weight">Weight(kgs): </label></td>
+			<td><input type="number" id="weight" name="weight"></td>
+		</tr>
+		<tr>
+			<td><label for="microchipped">Microchipped?: </label></td>
+			<td><input type="radio" id="microchipped" name="microchipped" value="Yes">Yes</td>
+			<td><input type="radio" id="microchipped" name="microchipped" value="No">No</td>
+		</tr>
+		<tr>
+			<td><label for="insurance">Insurance </label></td>
+			<td><input type="text" id="insurance" name="insurance"></td>
+		</tr>
+		<tr>
+			<td><label for="medications">Are they taking any medications? </label></td>
+			<td><input type="radio" id="microchipped" name="microchipped" value="Yes">Yes</td>
+			<td><input type="radio" id="microchipped" name="microchipped" value="No">No</td><br>
+		</tr>
+		<tr>		
+			<td><textarea  id="medications" name="medications" rows="5" cols="50";>If yes, please sepecify:
+			</textarea></td>
+		</tr>
+		<tr>
+			<td><label for="parasite">Parasite control:  </label></td>
+			<td><input type="text" id="parasite" name="parasite"></td>
+		</tr>
+		<tr>
+			<td><label for="lastGiven">Date last given:</label></td>
+			<td><input type="date" id="lastGiven" name="lastGiven"></td>
+		</tr>
+
+	</table>
+    <input type="submit" name="petSubmit" value="Pet submit">
+</form>
+</div>
+	
+</body>
+</html>
